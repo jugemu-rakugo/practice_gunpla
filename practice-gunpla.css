@@ -1,0 +1,233 @@
+
+/*いろいろ調べ試しても、「top-wrapper」と「lesson-wrapper」
+の隙間がどうしても埋まらなかったので、仕方なく入力。
+
+    「*」はすべての要素にスタイルを適用する全称セレクタです。
+    「*」を単体で利用すると、すべての要素に適用されます。
+
+👇*/
+*{ 
+    margin:0;
+    padding:0;
+}          
+
+.header-left {
+    float:left;
+    margin-top:5px;
+    
+
+}
+
+.header-right {
+    float:right;
+    background-color:rgba(255, 255, 255, 0.3);
+    transition:all 0.5s;
+
+}
+
+.header-right a {
+    line-height:100px;
+    color:white;
+
+    text-decoration:none;/*👈<a>タグのリンクの下線を消すため！*/
+
+    display:block;
+    padding:0px 25px;
+    font-size:25px;
+
+
+}
+
+.header-right:hover {
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+header {
+    height:100px;
+    background-color:rgb(113, 109, 109);
+    width:100%;
+
+    /*👇「ポジションを固定」＋「固定する位置」を指定でワンセット！*/
+    position:fixed;
+    top:0px;
+
+    z-index:10;
+
+}
+
+.top-wrapper {
+    background-image:url(base.png);
+    background-size:cover;
+    height:600px;
+    color:orange;
+    text-align:center;
+
+    padding-top:180px;
+    padding-bottom:100px;
+
+    
+
+
+}
+
+.top-wrapper h1 {
+    font-size:50px;
+    letter-spacing:20px;
+    opacity:0.9;
+
+
+}
+
+.top-wrapper p {
+    opacity:0.9;
+    font-size:25px;
+}
+
+.container {
+    margin:0 auto;
+    width:1250px;
+    padding:0px 15px;
+
+
+
+
+
+}
+
+.btn {
+    color:white;
+    opacity:0.85;
+
+    text-decoration:none;/*👈<a>タグのリンクの下線を消すため！*/
+
+    padding:8px 24px;
+    display:inline-block;
+    border-radius:10px;
+    font-size:25px;
+
+}
+
+.btn:hover {
+    opacity:1;
+
+}
+
+/*👇ボタン部の「枠」は「background-color」で作る！*/
+.signup {
+    background-color:#239b76;
+}
+
+.facebook {
+    background-color:#3b5998;
+    margin-right:10px;
+}
+
+.twitter {
+    background-color:#55acee;
+}
+
+.btn-wrapper {
+    margin:20px 0px;
+
+}
+
+.btn-wrapper p {
+    margin:10px 0px;
+
+}
+
+.heading h2 {
+    font-size:40px;
+    text-align:center;
+    color:orange;
+    padding-top:60px;
+    padding-bottom: 30px;
+    font-weight: normal;
+
+
+    margin-bottom:60px;/*👈※*/
+
+
+}
+
+.lesson-icon {
+    position:relative;
+
+}
+
+.lesson-icon p {
+    position:absolute;
+    top:45px;
+    left:45px;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+
+}
+
+.lesson/*👈親に対して「子」、つまり「並べたい要素そのもの」にfloat、widthを使う！*/ {
+    float:left;
+    width:25%;
+
+}
+
+.lesson-wrapper {
+    height:700px;
+    padding-bottom:150px;
+    background-color: #f7f7f7;
+
+}
+
+.message {
+    background-color: #5dca88;
+    padding:15px 40px;
+    
+    box-shadow:0px 8px black;/*👈影の左方向、下方向、色を指定！*/
+
+}
+
+.heading h3 {
+    font-weight:normal;
+    font-size:30px;
+    color:orange;
+
+
+    margin-bottom:60px;/*👈※*/
+
+}
+
+.message-wrapper {
+    border-bottom:2px solid gray;
+    padding-bottom: 150px;
+    padding-top:150px;
+    text-align:center;
+
+}
+
+.message:hover {
+    cursor:default;
+
+}
+
+.message:active {
+    position:relative;
+    top:8px;
+
+    box-shadow: none;
+}
+
+footer {
+    background-color: rgba(155, 91, 152, 0.5);
+    padding-top:30px;
+
+
+}
+
+footer p {
+    font-size: 20px;
+    color:white;
+    text-align: right;
+}
+
+
+
