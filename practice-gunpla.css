@@ -43,7 +43,7 @@
 
 header {
     height:100px;
-    background-color:rgb(113, 109, 109);
+    background-color:rgba(65, 60, 60, 0.8);
     width:100%;
 
     /*👇「ポジションを固定」＋「固定する位置」を指定でワンセット！*/
@@ -135,6 +135,11 @@ header {
 
 }
 
+.fa {
+    margin-right:10px;
+
+}
+
 .heading h2 {
     font-size:40px;
     text-align:center;
@@ -181,7 +186,7 @@ header {
     background-color: #5dca88;
     padding:15px 40px;
     
-    box-shadow:0px 8px black;/*👈影の左方向、下方向、色を指定！*/
+    box-shadow:0px 10px rgb(32, 32, 32);/*👈影の左方向、下方向、色を指定！*/
 
 }
 
@@ -200,6 +205,7 @@ header {
     padding-bottom: 150px;
     padding-top:150px;
     text-align:center;
+    background-color:rgb(245, 246, 242);
 
 }
 
@@ -210,20 +216,25 @@ header {
 
 .message:active {
     position:relative;
-    top:8px;
+    top:10px;
 
     box-shadow: none;
 }
 
 footer {
-    background-color: rgba(155, 91, 152, 0.5);
-    padding-top:30px;
+    background-color: rgba(155, 91, 152, 0.4);
 
 
 }
 
 footer p {
-    font-size: 20px;
+    font-size:20px;
     color:white;
     text-align: right;
+}
+
+footer img {
+    padding-top:25px;
+
+
 }
