@@ -12,6 +12,13 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--👆viewportを設定し、スマホやタブレットでメディアクエリが正しく機能するようにする！-->
+
+        <link rel="stylesheet" href="responsive.css">
+        <!--👆responsive.cssを読み込む際には、必ずviewportよりも下の行に記述する！！！-->
+
+
     </head>
 
     <body>
@@ -22,7 +29,7 @@
 
                 <div class="header-left">
 
-                  <img src="logo-gunpla.png" width="315px" height="90px">
+                  <img src="logo-gunpla.png" width="228px" height="65px">
 
                 </div>
 
@@ -161,6 +168,9 @@
                         </div>
 
                     </div>
+
+                    <div class="clear"></div>
+                    <!--👆子要素がfloatであっても、親要素が高さを持つようにする！-->
 
                 </div>
 
