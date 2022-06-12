@@ -19,7 +19,7 @@
 
 /* スマホ向けレイアウト */
 
-@media (max-width:670px) {
+@media (max-width:720px) {
     .lesson {
         width:100%;
 
