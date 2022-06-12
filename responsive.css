@@ -37,6 +37,8 @@
 
     }
     .top-wrapper {
+    /*「or sign up with」も左寄せになってしまうため、
+    「text-align:left;」は使わなかった*/
         padding-top:130px;
 
 
@@ -54,7 +56,8 @@
 
     }
     .menu-icon {
-        display:block !important;
+        display:block !important;/*👈「!important」がないと表示されなかった*/
+
         
     }
 }
